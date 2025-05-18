@@ -1,0 +1,37 @@
+/*Write a Program to Calculate Simple Interest and print its value .
+
+
+ *Task performed in this code :-
+
+ 1. Take the Initial value of Principle from the User.
+ 2. After that take the value of Annual Rate of Interest.
+ 3. Divide Annual Rate of Interest by 100.
+ 3. After that take the value of Time from User.
+
+ Logic Used :-
+
+ 1. Value of Initial Value of Principal is denoted by "P".
+ 2. Value of Annual Rate of Interest is denoted by "R".
+ 3. Value of Time is denoted by "T".
+ 4. S.I.=(P*R*T)/100*/
+
+
+import java.util.*;
+ class Exe5 
+   {
+    public static void main(String[]args)
+     {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the Initial value of Principle : ");
+      double P = sc.nextDouble();
+      System.out.println(" Enter the value of Annual Rate of Interest : ");
+      double  R = sc.nextDouble();
+      double S = R/100;
+      System.out.println(" Enter the value of Time : ");
+      double T = sc.nextDouble();
+      double B = P*(1 + S * T);
+      System.out.println(" The value of Simple interest is : " +B);
+   }
+}
+
+  
