@@ -9,7 +9,7 @@ class Exe22 {
    Exe22() {
    }
 
-   public static void main(String[] var0) {
+   public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);
       System.out.println("Enter the three numbers :");
       double a = sc.nextDouble();
