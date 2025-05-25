@@ -1,0 +1,41 @@
+/* Write a program to find the first non-repeated character in a given string 
+
+
+#  Task performed in this code :-
+
+1. Converting a string to a character array. 
+2. Count the frequency of each character..
+3. Iterate again to find the first one with frequency = 1.
+
+
+
+# Find the first Non - repeated character in a given string. */
+
+
+
+import java.util.*;
+public class firstUniChar{
+public static void main(String[]args){
+String input="aabbcdeff";
+char result=findFirstNonRepeated(input);
+
+if(result!=0)
+  System.out.println("First Non repeated. ");
+else
+  System.out.println("No Unique character found. ");
+}
+
+public static char findFirstNonRepeated(String str){
+   int[]count= new int[256];
+   for(char ch:str.toCharArray()){
+      count[ch]++;
+ }
+
+for(char ch:str.toCharArray()){
+  if(count[ch]==1){
+    return ch;
+   }
+ }
+  return 0;
+ }
+}
